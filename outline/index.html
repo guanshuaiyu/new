@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>知识要领</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'iconfont';
+            src: url('iconfont.ttf');
+            src: url('iconfont.eot');
+            src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+                 url('iconfont.woff') format('woff'),
+                 url('iconfont.ttf') format('truetype'),
+                 url('iconfont.svg#iconfont') format('svg');
+        }
+        .iconfont{
+            font-family:"iconfont" !important;
+            font-size:30px;font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 50px;
+            text-align: center;
+            color: #999999;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "微软雅黑";
+        }
+        li{
+            list-style: none;
+        }
+        .content{
+            padding-right: 15px;
+            margin-top: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .caozuo{
+        	color:black;
+        	font-size: 18px;
+        	margin: 10px 0 10px;
+        	line-height: 30px;
+        }
+        .text{
+            border-bottom: 1px dashed #eca6fe;
+            line-height: 30px;
+            font-size: 14px;
+            color: #333;
+            margin: 0 0 10px;
+        }
+        .indent{
+            text-indent:2em;
+        }
+        .tishi{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            padding: 0 10px;
+            font-weight: 500;
+        }
+        .dagang{
+            margin: 30px auto;
+            text-align: center;
+            font-size: 24px;
+        }
+        .blue{
+            color: #fff;
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            padding: 0 10px;
+            font-weight: 500;
+            background-color: #337ab7;
+            border-radius: 3px;
+        }
+        a{
+            font-style: normal;
+            color: black;
+            text-decoration: none;
+        }
+        .xiaotu{
+            width: 100%;
+            font-size: 13px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #DADADA;
+        }
+        .xiaotua{
+            width:20%;
+            float: left;
+            background: white;
+            margin: -1px;
+            border: 1px solid #DADADA;
+            text-align: center;
+        }
+        .yuantu{
+            width: 50px;
+            height: 50px;
+            margin: 3px auto;
+        }
+        .image{
+            margin: 0 auto;
+            padding: 20px 15px 0 15px;
+            width: 250px;
+            position: relative;
+            min-height: 1px;
+        }
+        .green{
+            font-size: 14px;
+            margin-top: 10px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 3px;
+            background-color: #dff0d8;
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+            font-weight: 500;
+        }
+        p{
+            padding: 0 20px;
+            text-align:justify;
+        }
+        .zhangjie{
+            padding: 0;
+            line-height: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+        #returntop{
+            position: fixed;
+            bottom: 10px;
+            right:10px;
+            width: 50px;
+            text-align: center;
+            line-height: 15px;
+            border: 2px solid #999999;
+            height: 50px;
+            border-radius: 50%;
+            display: none;
+            cursor: pointer;
+            z-index: 99999;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            background: white;
+        }
+        .yuantuzi{
+            line-height: 1.5rem;
+
+        }
+        .fenjie{
+            width: 100%;
+            height: 10px;
+            float: left;
+            border-top:1px solid  #DADADA;
+            background: #F3F3F3;
+        }
+    </style>
+    <script type="text/javascript">
+    window.onload = function(){
+       var BackTop=function(){
+            var returntop=document.getElementById("returntop");
+            var d=document.body;
+            window.onscroll = set;
+            returntop.onclick=function(){
+                returntop.style.display="none";
+                window.onscroll=null;
+                this.timer=setInterval(function(){
+                    d.scrollTop-=Math.ceil(d.scrollTop*0.1);
+                    if(d.scrollTop==0)clearInterval(returntop.timer,window.onscroll=set);
+                    window.history.back();
+                },10);
+            };
+            function set(){
+                returntop.style.display=d.scrollTop?'block':"none";
+            }
+        };
+        BackTop();
+    }
+    </script>
+</head>
+<body>
+    <div id="returntop">
+        <i class="iconfont">&#xe61c;</i>
+    </div>
+    <ul class="xiaotu">
+        <li class="xiaotua">
+            <a href="#a1">
+                <div class="yuantu">
+                <image src="image/t1.png" style="width: 100%;height:100%;"/>
+                  </div>
+                <div class="yuantuzi">安全带</div>
+            </a>
+        </li>
+        <li class="xiaotua">
+         <a href="#a2">
+            <div class="yuantu"> <image src="image/t2.png" style="width: 100%;height:100%;"/></div>
+            <div class="yuantuzi">点火开关</div>
+            </a>
+        </li>
+        <li class="xiaotua">
+         <a href="#a3">
+            <div class="yuantu"> <image src="image/t3.png" style="width: 100%;height:100%;"/></div>
+            <div class="yuantuzi">方向盘</div>
+            </a>
+        </li>
+        <li class="xiaotua">
+         <a href="#a4">
+            <div class="yuantu"> <image src="image/t4.png" style="width: 100%;height:100%;"/></div>
+            <div class="yuantuzi">离合器</div>
+            </a>
+        </li>
+        <li class="xiaotua">
+         <a href="#a5">
+            <div class="yuantu"> <image src="image/t5.png" style="width: 100%;height:100%;"/></div>
+            <div class="yuantuzi">加速踏板</div>
+            </a>
+        </li>
+        <li class="xiaotua">
+         <a href="#a6">
+            <div class="yuantu"> <image src="image/t6.png" style="width: 100%;height:100%;"/></div>
+            <div class="yuantuzi">制动踏板</div>
+            </a>
+        </li>
+        <li class="xiaotua">
+         <a href="#a7">
+            <div class="yuantu"> <image src="image/t7.png" style="width: 100%;height:100%;"/></div>
+            <div class="yuantuzi">驱车制动</div>
+            </a>
+        </li>
+        <li class="xiaotua">
+         <a href="#a8">
+            <div class="yuantu"> <image src="image/t8.png" style="width: 100%;height:100%;"/></div>
+            <div class="yuantuzi">座椅调整</div>
+            </a>
+        </li>
+        <li class="xiaotua">
+         <a href="#a9">
+            <div class="yuantu"> <image src="image/t9.png" style="width: 100%;height:100%;"/></div>
+            <div class="yuantuzi">后视镜</div>
+            </a>
+        </li>
+        <li class="xiaotua">
+         <a href="#a10">
+            <div class="yuantu"> <image src="image/t10.png" style="width: 100%;height:100%;"/></div>
+            <div class="yuantuzi">指示灯</div>
+            </a>
+        </li>
+        <li class="fenjie"></li>
+        <li class="xiaotua">
+         <a href="#a11">
+            <div class="yuantu"> <image src="image/t11.png" style="width: 100%;height:100%;"/></div>
+            <div class="yuantuzi">倒车入库</div>
+            </a>
+        </li>
+        <li class="xiaotua">
+         <a href="#a12">
+            <div class="yuantu"> <image src="image/t12.png" style="width: 100%;height:100%;"/></div>
+            <div class="yuantuzi">侧方停车</div>
+            </a>
+        </li>
+        <li class="xiaotua">
+         <a href="#a13">
+            <div class="yuantu"> <image src="image/t13.png" style="width: 100%;height:100%;"/></div>
+            <div class="yuantuzi">直角转弯</div>
+            </a>
+        </li>
+        <li class="xiaotua">
+         <a href="#a14">
+            <div class="yuantu"> <image src="image/t14.png" style="width: 100%;height:100%;"/></div>
+            <div class="yuantuzi">曲线行驶</div>
+            </a>
+        </li>
+        <li class="xiaotua">
+         <a href="#a15">
+            <div class="yuantu"> <image src="image/t15.png" style="width: 100%;height:100%;"/></div>
+            <div class="yuantuzi">坡道起步</div>
+            </a>
+        </li>
+    </ul>
+    <div class="content">
+        <p class="zhangjie">基础知识</p>
+        <a name="a1"></a><div class="blue">一、安全带</div>
+        <div class="text">
+            <p class="indent"> 安全性已成为驾驶员和乘员首要考虑的问题，也是汽车最重要的性能之一，作为汽车发生碰撞过程中保护驾乘人员的基本防护装置，正确使用安全带很重要。</p>
+            <p class="tishi">操作步骤</p>
+            <p>1、首先调整坐姿，以最适合自己驾驶的状态坐好；</p>
+            <p>2、用手握住搭扣锁和锁舌，缓慢地拉出安全带；</p>
+             <div class="image"> <img src="./image/one-1.png" style="width: 250px;vertical-align: middle;"> </div>
+            <p>3、将安全带卡扣插入扣锁中，直至听到卡塔声，然后再拉一下安全带，确认锁扣扣好。</p>
+             <div class="image"> <img src="./image/one-2.png" style="width: 250px;vertical-align: middle;"> </div>
+            <p class="tishi">小提示</p>
+            <p class="indent">安全带应经过锁骨，髋骨，无折叠、翻转情况，同时不应调节过高，尤其不应经过颈部，不应压住领带，上衣口袋中不应放置尖锐物品，下方安全带不应经过腹部。</p>
+        </div>
+        <a name="a2"></a><div class="blue">二、点火开关</div>
+        <div class="text">
+            <p class="indent">点火系统的开关，可自由开启或关闭点火线圈的主要电路。点火开关分四个档位，LOCK锁死汽车，ACC给全车通电，ON除了起动机，其余的基础设备都是开着的，正常行车时钥匙处于ON状态，这时全车所有电路都处于工作状态。START发动汽车，START档是发动机启动档位，启动后会自动恢复正常状态也就是ON档。</p>
+            <p class="tishi">操作步骤</p>
+            <p class="indent">钥匙插进点火开关后，在每个档位做瞬间停留大约1、2秒钟，这时应该能听见各级电器设备通电的声音，然后再进入下一个档位就可以了。</p>
+            <div class="image"> <img src="./image/one-3.png" style="width: 250px;vertical-align: middle;"> </div>
+            <p class="tishi">小提示</p>
+            <p class="indent">这四个档每个档位都是递进式的，目的是让电器设备逐个进入工作状态，这样还可以缓解由于瞬间通电造成的汽车电瓶的负担。如果着车时在其它档位不做停留，从LOCK直接进入START的启动状态，会瞬间增加电瓶的负荷，同时由于各电器设备还没有完全进入工作状态，电脑很难正常指挥发动机启动，所以这种操作对电瓶和发动机都是非常不利的。经常这样操作会缩短电瓶的使用寿命，会造成发动机启动困难，促使积炭的产生。</p>
+        </div>
+        <a name="a3"></a><div class="blue">三、方向盘</div>
+        <div class="text">
+            <p class="indent">方向盘是汽车操纵行驶方向的轮状装置，其功能是将驾驶员作用到转向盘边缘上的力转变为转矩后传递给转向轴。</p>
+            <p class="tishi">操作步骤</p>
+            <p>左右手分别握住方向盘9点钟和3点钟位置。</p>
+            <div class="image"> <img src="./image/one-4.png" style="width: 250px;vertical-align: middle;"> </div>
+            <p class="indent">左手为主用力开始转动，右手为辅自然握。左手为主继续转动，右手跟着转动。左手继续转动转型盘，右手握着左上方，左手松开。</p>
+            <p class="indent">右手为主转动转向盘，左手回位，然后采用与转型盘相反的顺序回位。利用复原力回复原位。</p>
+            <p class="tishi">小提示</p>
+            <p class="indent">调整好座椅，不要抱着方向盘操作或半躺着操作离方向盘太远。行驶中，除操作需要外，不要长时间单手操作，也别将手长时间搁在排挡上或窗框上。转动方向盘时，不可用力过猛，急打急回，车辆停住后不要转动方向盘。在颠簸路段上行驶时，双手要握稳方向盘，以防方向盘失控而导致事故发生。</p>
+        </div>
+        <a name="a4"></a><div class="blue">四、离合器</div>
+        <div class="text">
+            <p class="indent">驾驶室底板上有三个踏板，左边的踏板是离合器踏板，其功用是控制发动机动力与传动装置分离和结合的机件，踩下离合器踏板发动机动力切断，抬起离合器踏板发动机动力传递。离合器主动部分和被动部分开始接触的点叫半联动接力点，半联动在一些复杂路况以及起步、转弯和短距离跟进等会经常使用。</p>
+            <p class="tishi">操作步骤</p>
+            <p class="indent">踏法：用左脚掌踏在踏板上，用膝关节裸利关节伸屈动作踏下和抬起离合器踏板，禁止用脚尖、脚心、脚跟操纵离合器踏板。</p>
+            <div class="image"> <img src="./image/one-5.png" style="width: 250px;vertical-align: middle;"> </div>
+            <p class="indent">踏下踏板的要领，踏下离合器踏板要迅速、有力，一踏到底。抬起踏板的要领，平路起步时抬起离合器踏板要按“快－慢快”的要领操作，即抬起踏板开始时快，抬至半联动点时慢，当离合器主、被动部分安全结合又变快，抬起离合器踏板也可按“快－停－慢”的要领操作。</p>
+            <p class="tishi">小提示</p>
+            <p class="indent">不用脚掌踏或踏不到底；</p>
+            <p class="indent">车辆正常行驶中把脚放在踏板上；</p>
+            <p class="indent">车辆在正常行驶中不能长间使用半联动；</p>
+            <p class="indent">踏下油门踏板时不能踏下离合器踏板。</p>
+        </div>
+       <a name="a5"></a> <div class="blue">五、加速踏板</div>
+        <div class="text">
+            <p class="indent">加速踏板是用以控制发动机转速提高或降低的装置。踩下加速踏板，发动机转速升高；抬起加速踏板，发动机转速下降。加速踏板一般设置在驾驶室右侧底部，由右脚操纵。</p>
+            <p class="tishi">操作步骤</p>
+            <p class="indent">以右脚跟踏放在驾驶室地板上作为支点，脚掌轻踏在加速踏板上，用踝关节的伸屈动作，踏下或放松。</p>
+            <div class="image"> <img src="./image/one-6.png" style="width: 250px;vertical-align: middle;"> </div>
+            <p class="indent">右脚除必须踏下或松拾制动踏板外，其他时间应轻松地放在加速踏板上。操纵加速踏板要做到“轻踏、缓抬，切忌忽抬忽踏或连续抖动。加速踏板回位要领：脚跟不动，将脚尖抬起。</p>
+            <p class="tishi">小提示</p>
+            <p class="indent">选择的挡位要适当，使发动机大部分时间运行在中等转速和较大节气门，以节省燃料。放松离合器要与踩油门密切配合，动作敏捷。汽车停驶、熄火前，应先松油门踏板，不得猛轰空油门。容易出现的错误：不以脚跟为支点，而把整只脚放在路板上。这样会使脚掌随颠簸失去平衡， 导致踏板忽高忽低。汽车行驶时，如已踩下路板行程3/4，而发动机转速还不能相应提高时，应换入低一级的档位，再踩下加速路板进行加速。</p>
+        </div>
+        <a name="a6"></a><div class="blue">六、制动踏板</div>
+        <div class="text">
+            <p class="indent">驾驶室底板上有三个踏板，中间的踏板就是行车制动器踏板，也叫制动或刹车，它的作用是使汽车减速或停车，踏下去车辆减速，直至停车。</p>
+            <p class="tishi">操作步骤</p>
+            <p class="indent">制动踏板的踏法：用右脚前脚掌踏制动踏板，利用膝关节的伸屈动作踏下或放松。</p>
+            <div class="image"> <img src="./image/one-7.png" style="width: 250px;vertical-align: middle;"> </div>
+            <p class="indent">需要降低车速时应先轻后重缓慢踏下；</p>
+            <p class="indent">需要停车时，除按减速要领操作外，在车辆即将停车时放松踏板再缓慢踏下；</p>
+            <p class="indent">需要紧急制动时，应迅速有力将踏板踏到底；</p>
+            <p class="indent">放松踏板要领，放松踏板也应根据需要操作，可以一次放松，也可以分次逐渐放松。</p>
+            <p class="tishi">小提示</p>
+            <p class="indent">不要用脚尖、脚心踏制动踏板。</p>
+            <p class="indent">踏下制动踏板时应紧握方向盘。不准在踏加速踏板时踏制动踏板。</p>
+        </div>
+        <a name="a7"></a><div class="blue">七、驱车制动</div>
+        <div class="text">
+            <p class="indent">驻车制动器操纵杆是能使汽车本体固定在地面或某平面上而不出现相对移动的总成的操纵装置。是汽车驻车制动器总成的一部分。也称“手制动”、“手刹”、“中央制动器”。</p>
+            <p class="tishi">操作步骤</p>
+            <p class="indent">拉紧时，右手五指握住手制动拉杆用力向上拉紧,此时仪表盘驻车制动警告灯亮。</p>
+            <p class="indent">放松时，右手五指握住手制动拉杆先向上用力提起后，用拇指压下制动拉杆顶端的按钮，再将制动拉杆放松至底部。此时，驻车制动解除，驻车制动警告灯熄灭。</p>
+            <div class="image"> <img src="./image/one-8.png" style="width: 250px;vertical-align: middle;"> </div>
+            <p class="indent">如果道路狭窄靠右开，以右边马路牙子为参考，在狭窄路段驶偏，极容易与对向车辆发生碰撞。</p>
+            <p class="tishi">小提示</p>
+            <p class="indent">不管在任何情况下停车，人离开车时都要拉紧手制动拉杆，应养成良好的习惯。</p>
+            <p class="indent">手制动器使用时必须拉紧手制动拉杆，否则起步时易忘记放松手制动拉杆，强行起步行车会造成后制动片的严重磨损。</p>
+            <p class="indent">当车辆起步时，驾驶员感觉车辆起步沉重或不能起步，应首先考虑驻车手制动拉杆是否还未放松，观察驻车制动警告灯是否熄灭。</p>
+        </div>
+        <a name="a8"></a><div class="blue">八、座椅调整</div>
+        <div class="text">
+            <p class="indent">汽车座椅调整不好开车会很不舒服，一定要在车行驶前就调整好，不要边开车边调整以免导致不良后果的哦！</p>
+            <p class="tishi">操作步骤</p>
+            <p class="indent">正确的座椅高度应调整到驾驶者的视线不会被方向盘挡住，并可以清楚地看见所有的重要仪表及街道标志。</p>
+            <div class="image"> <img src="./image/one-9.png" style="width: 250px;vertical-align: middle;"> </div>
+            <p class="indent">在调整好座椅的高度后，还要调整座椅的前后位置。首先应将臀部尽量向后靠，以顶到坐垫及椅背之间最好，这样可使自己坐得更稳，不会晃动。坐稳之后应 注意一下手、脚的位置，把左右手分别放在方向盘9和3点钟的位置，此时不可以让自己的背部离开椅背，如果离开的话，表示你坐得太靠后，必须把座椅往前挪。</p>
+            <p class="tishi">小提示</p>
+            <p class="indent">上下调整座椅时，要让头部与车顶至少有一拳的距离。</p>
+            <p class="indent">当脚踩住制动踏板至最底端时，腿部仍要有一定的弯曲量。</p>
+            <p class="indent">另外两手要略微弯曲，这样万一发生事故时，能有效分散撞击力，避免力量集中在手臂各关节上。</p>
+        </div>
+
+         <a name="a9"></a><div class="blue">九、后视镜</div>
+        <div class="text">
+            <p class="indent">后视镜是驾驶员坐在驾驶室座位上直接获取汽车后方、侧方和下方等外部信息的工具。正确调节后视镜并非单纯为了缩小视觉盲区，而是要让我们的可视视野更有利于我们驾驶。</p>
+            <p class="tishi">操作步骤</p>
+            <p class="indent">首先调整好座椅、方向盘，位置适中后再调整后视镜。</p>
+            <p class="indent">长方形按钮可选择左右后视镜，推到左边选择左后视镜，推到右边控制右后视镜圆形按钮控制后视镜角度。先按指向左右的按钮调节左右，再按指向上下的按钮调节上下。</p>
+            <p class="indent">对于中央内后视镜，我们要把中央后视镜里面的地平线映像调节至镜子中央，把你的右侧耳朵的映像调节至镜子左侧边缘。</p>
+            <div class="image"> <img src="./image/one-10.png" style="width: 250px;vertical-align: middle;"> </div>
+            <p class="indent">对于左侧外后视镜，我们要把后视镜里面的地平线映像调节至镜子中央，把左侧车身的映像调节至占据镜子右侧1/4的区域。对于右侧外后视镜，我们要把后视镜里面的地平线映像调节至位于镜子高度的2/3处，把右侧车身的映像调节至占据镜子左侧1/4的区域。</p>
+             <div class="image"> <img src="./image/one-11.png" style="width: 250px;vertical-align: middle;"> </div>
+            <p class="tishi">小提示</p>
+            <p class="indent">调整后视镜时，驾驶人要保持正确的驾驶姿势，并在行车前进行，行车中调整后视镜是非常危险的。调整时，手不要接触镜面。</p>
+        </div>
+        <a name="a10"></a><div class="blue">十、指示灯</div>
+        <div class="text">
+            <p class="indent">汽车技术在不断地更新换代，这最直观的表现就在我们的汽车仪表盘上。形形色色花里胡哨的符号各有不同的代表含义。如果你对它们不甚了解，又没时间翻阅那随车附带的厚重说明书，不如来看看这几页内容。我们为你归纳总结了不少关于汽车仪表符合的有用知识，相信不管是新手还是老手都会有所收获。</p>
+        </div>
+        <div class="blue">十一、汽车仪表盘指示灯</div>
+        <div class="image" style="width:100%;padding: 20px 0px 0px "> <img src="./image/1.png" style="width: 100%;vertical-align: middle;"></div>
+        <p class="zhangjie">专项知识</p>
+        <ul>
+            <li>
+                <a name="a11"></a><div class="blue">一、倒车入库</div>
+                <div class="caozuo"> ● 项目说明</div>
+                <div class="image"> <img src="./image/image1.png" style="width: 250px;vertical-align: middle;"> </div>
+                <div class="text indent">
+                    <p>1、从道路右侧控制线向右后倒车入库，停车，中间不能停顿；</p>
+                    <p>2、再前进出库向左端行驶至左控制线，停车；</p>
+                    <p>3、从道路左侧控制线向左后倒车入库，停车，中间不能停顿；</p>
+                	<p>4、最后出库向右端行驶至右控制线，项目结束。</p>
+                </div>
+                <div class="caozuo"> ● 评判标准</div>
+                <div class="text">
+                    <p>1、不安规定路线、顺序行驶的，不合格；</p>
+                    <p>2、车身出线的，不合格；</p>
+                    <p>3、倒车不入的，不合格；</p>
+                    <p>4、中途停车的，不合格；</p>
+                </div>
+                <div class="caozuo"> ● 操作要领</div>
+                <div class="text">
+                    <p>1、上线位置：使车身与左边线保持在1.5米左右，行驶至起点停车；</p>
+                    <p>2、打轮时机：看左后视镜，当控制线漏出时，方向盘向右打满轮；</p>
+                    <p>3、调整方法：通过右后视镜观察车辆行驶轨迹，右库角露出后，保持车身与库角距离在30CM左右，距离过近时，回半圈方向盘调整，距离过远时，保持向右打满轮；</p>
+                    <p>4、停车时机：倒库入底时看左后视镜，当库前边线漏出时，停车；</p>
+                    <p>5、出库时机：车辆驶出车库时，观察到车窗角与库前左边线成一直线，方向盘左满轮。</p>
+                </div>
+                <div class="caozuo"> ● 注意事项</div>
+                <div class="text">
+                    <p>1、进退过程中，放慢车速，但不能停车；</p>
+                    <p>2、车身不得出库位线及前端线；</p>
+                    <p>3、方向不要打错；</p>
+                    <p>4、安全带不要忘；</p>
+                    <p>5、座位调整要适合；</p>
+                    <p>6、后视镜微向下易观察。</p>
+                </div>
+                 <div class="caozuo"> ● 操作方法</div>
+                <div class="green">右倒库</div>
+                <div class="text">
+                    <p>1、轻抬离合使车后移，控制好车速，看左后视镜，当右起点感应线出现在左后视镜位置时把转向盘右打死。</p>
+                    <div class="image"> <img src="./image/image2.png" style="width: 250px;vertical-align: middle;"> </div>
+                    <p>2、把转向盘右打死，继续后移，中间不能停车，同时观察右后视镜，至最右边线露出后，保持车身与库角距离30CM，(小于30CM回半圈方向盘调整，大于30CM继续右打死方向，车身正还是大于30CM，可能是看1点时方向盘打的慢，下次提前或加快打方向速度)。继续后移，当右后视镜库边线与车身平行时，方向盘回正，调正车身，倒库入底。</p>
+                    <div class="image"> <img src="./image/image3.png" style="width: 250px;vertical-align: middle;"> </div>
+                    <p>3、倒库入底时看左后视镜，当库前边线出在左后视镜位置时，停车，倒库完成。</p>
+                    <div class="image"> <img src="./image/image5.png" style="width: 250px;vertical-align: middle;"> </div>
+                    <p>4、出库，挂一档前行，当车前头盖刚看不到路边线时，把转向盘左打死，当车身正时，回正方向，前车轮过左起点感应线，停车。</p>
+                    <div class="image"> <img src="./image/image6.png" style="width: 250px;vertical-align: middle;"> </div>
+                    <div class="green">左倒库</div>
+                    <p>5、轻抬离合使车后移，看左后视镜，当左起点感应线稍微过左后视镜，到位置时把转向盘左打死。</p>
+                    <div class="image"> <img src="./image/image7.png" style="width: 250px;vertical-align: middle;"> </div>
+                    <p>6、把转向盘左打死，继续后移，同时观察右左视镜，至最左边线露出后，保持车身与库角距离30CM，(小于30CM回半圈方向盘调整，大于30CM继续左打死方、向，车身正还是大于30CM，可能是看1点时方向盘打的慢，下次提前或加快打方向速度)。继续后移，当左后视镜库边线与车身接近平行时方向盘回正，调正车身，倒库入底。</p>
+                    <div class="image"> <img src="./image/image8.png" style="width: 250px;vertical-align: middle;"> </div>
+                    <p>7、方向盘回正，倒库入底。看左后视镜，当库前边线出在左后视镜位置时，停车，倒库完成。</p>
+                    <div class="image"> <img src="./image/image10.png" style="width: 250px;vertical-align: middle;"> </div>
+                    <p>8、出库，挂一档前行，当车前头盖看不到路边线时(如图在前盖下)，把转向盘右打死，当车身正时，回正方向，前车轮过右起点感应线，停车。</p>
+                    <div class="image"> <img src="./image/image11.png" style="width: 250px;vertical-align: middle;"> </div>
+                </div>
+            </li>
+            <li>
+                <a name="a12"></a><div class="blue">二、侧方停车</div>
+                <div class="caozuo"> ● 项目说明</div>
+                <div class="image"> <img src="./image/image12.png" style="width: 250px;vertical-align: middle;"> </div>
+                <div class="text">
+                    <p>1、车辆在库前方靠右边线停稳；</p>
+                    <p>2、一次倒车入库，中途不能停车，不能熄火；</p>
+                    <p>3、出入车库时，车轮不触轧车道边线，车身不触碰库位边线。</p>
+                </div>
+                 <div class="caozuo"> ● 评判标准</div>
+                 <div class="text">
+                    <p>1、车辆入库停止后，车身出线的，不合格;</p>
+                    <p>2、中途停车的，不合格;</p>
+                    <p>3、行驶中轮胎触轧车道边线的，扣10分。</p>
+                </div>
+                 <div class="caozuo"> ● 操作要领</div>
+                 <div class="text">
+                    <p>1、上线：车身右侧离边线距离保持在30-50厘米左右；</p>
+                    <p>2、打轮时机：后车轮与前端线齐平时，方向盘向右打满轮；</p>
+                    <p>3、回轮时机：通过左后视镜观察，车库右后角漏出时，方向盘回正，继续倒车；</p>
+                    <p>4、进库时机：从左后视镜观察，左后轮贴近边缘线时，方向盘向左打满轮，车正停车不回轮；</p>
+                    <p>5、驶出车位：打左灯驶出，当车辆右前轮驶出车位左边线后，回正方向，根据车速及需要向右调整驶出，关转向灯，项目结束。</p>
+                </div>
+                 <div class="caozuo"> ● 注意事项</div>
+                 <div class="text">
+                    <p>1、后视镜观察很重要，打轮时机控制好；</p>
+                    <p>2、倒车途中不能停车。</p>
+                </div>
+                 <div class="caozuo"> ● 操作方法</div>
+                 <div class="text">
+                    <p>1、车身在车库的左侧，右轮沿着库左边线行驶，车轮距左边线50cm(从座位上看，桑塔纳一般在车后侧机盖1/3的位置压线)，行驶到库上边线以前50cm处停车。</p>
+                <div class="image"> <img src="./image/image12.png" style="width: 250px;vertical-align: middle;"> </div>
+                    <p>2、准备倒车时，开左转向灯，然后开始倒车。从右面车窗中柱看2号角，2号角离中柱5cm时，向右打1.5圈(打死)。</p>
+                    <div class="image"> <img src="./image/image13.png" style="width: 250px;vertical-align: middle;"> </div>
+                    <p>3、当左侧后视镜出现4号点(即车库的右后角)时向左回轮1.5圈(即回正方向)，继续倒车。</p>
+                    <div class="image"> <img src="./image/image14.png" style="width: 250px;vertical-align: middle;"> </div>
+                    <p>4、从左后视镜看左后车轮，马上快碰到边缘线时，向左打死方向到车证(两侧后视镜观察到车身与车库边线平行)停车。</p>
+                    <div class="image"> <img src="./image/image15.png" style="width: 250px;vertical-align: middle;"> </div>
+                    <p>5、出库：开左转向灯，方向盘不用回，挂1档，档看到机盖最右侧越过左前库1号点时，向右回轮1.5圈，继续前进进到右侧雨刷最后一节库左线时，向右打一圈，车正回1圈，向前行驶。关转向灯，考试结束。</p>
+                    <div class="image"> <img src="./image/image16.png" style="width: 250px;vertical-align: middle;"> </div>
+                </div>
+            </li>
+             <li>
+                <a name="a13"></a><div class="blue">三、直角转弯</div>
+                <div class="caozuo"> ● 项目说明</div>
+                <div class="image"> <img src="./image/image18.png" style="width: 250px;vertical-align: middle;"> </div>
+                <div class="text indent">
+                    <p>驾驶车辆按规定线路低速行驶，直角转弯，一次通过，中途不得停车，车轮不得触轧车道边线。</p>
+                </div>
+                 <div class="caozuo"> ● 评判标准</div>
+                 <div class="text">
+                    <p>1、触压突出点﹐不及格﹔</p>
+                    <p>2、车轮触压路牙一次﹐扣20分。</p>
+                </div>
+                <div class="caozuo"> ● 操作要领</div>
+                <div class="text indent">
+                    <p>1、进入直角时：进入车道时，为左转弯项目时，车身紧贴右侧行驶；为右转弯项目时，车身紧贴左侧行驶；</p>
+                    <p>2、转弯时机：前轮驶过突出点时，方向盘打满轮；</p>
+                    <p>3、回轮时机：当车头对准出口时，方向盘回正，打转向灯驶出直角。</p>
+                </div>
+                 <div class="caozuo"> ● 注意事项</div>
+                <div class="text">
+                    <p>1、一挡通过，不加油门，用离合器半联动控速；</p>
+                    <p>2、根据车速控制打方向盘速度；</p>
+                    <p>3、看到车头对准出口，迅速将方向回正。</p>
+                </div>
+                 <div class="caozuo"> ● 操作方法</div>
+                  <div class="text indent">
+                    <p>进入直角弯前，先打右转向灯，车头快到直角弯入口路口路宽1/2处时，向右打轮1圈半，尽量让车身靠右贴，远离路牙。而靠右贴的合适位置，以路边出现在车头右起1/3处为宜，此时把轮回正，车往前直行，前方视野中左侧反光镜下沿即将看到路牙时，向左连续打轮2圈（速度不要过猛）。当路边出现在车头1/2处时，向右回轮1圈，打右转向灯。当车与路快正时，再向右回轮1圈，使出直角弯。</p>
+                </div>
+            </li>
+            <li>
+                <a name="a14"></a><div class="blue">四、曲线行驶</div>
+                <div class="caozuo"> ● 项目说明</div>
+                <div class="image"> <img src="./image/image17.png" style="width: 250px;vertical-align: middle;"> </div>
+                <div class="text indent">
+                    <p>驾驶车辆从弯道的入口驶入，以低速从弯道出口驶出；</p>
+                    <p>中途不得停车，车轮不得触轧路边线。</p>
+                </div>
+                 <div class="caozuo"> ● 评判标准</div>
+                 <div class="text">
+                    <p>1、中途停车，不及格</p>
+                    <p>2、扎压边线，扣100分</p>
+                    <p>3、熄火，扣10分</p>
+                </div>
+                <div class="caozuo"> ● 操作要领</div>
+                <div class="text">
+                    <p>1、进入曲线：进入曲线时，打左转向灯，使车辆沿右侧边缘驶入；</p>
+                    <p>2、转弯时机：学员观察路的最前端，随着车辆移动目光慢慢向前移动，余光感觉路边左转时贴近右侧边缘行驶，右转时贴近左侧边缘行驶；</p>
+                    <p>3、驶出曲线：当车头对准行出口时，方向盘回正，打右转向灯，驶出曲线，项目结束；</p>
+                    <p>4、(使用自动纠偏方式)。</p>
+                </div>
+                 <div class="caozuo"> ● 注意事项</div>
+                 <div class="text">
+                    <p>1、保持全程低速行驶，打方向不可过急；</p>
+                    <p>2、左弯贴右线，右弯贴左线；</p>
+                    <p>3、不轧线、不停车；</p>
+                    <p>4、视线看路最前端。</p>
+                </div>
+                 <div class="caozuo"> ● 操作方法</div>
+                 <div class="text">
+                    <p>1、进入弯道前，降低车速，用1挡或2挡驶人S形路，车辆与路右侧保持0.5m左右的距离，适当修正方向(留出左侧内轮差的足够距离)。</p>
+                    <p>2、进入第一个弯道，车辆沿道路的右侧进入弯道(距左侧路边缘约1米)，保持匀低速行驶，向左打方向盘，车辆由靠右侧行驶变为靠左侧行驶。</p>
+                    <p>3、进入第二个弯道，车辆左侧车轮保持与路边缘线0.5m，适度修正方向。</p>
+                    <p>4、出弯道时，回转方向盘，进人直线行驶。</p>
+                </div>
+            </li>
+            <li>
+                <a name="a15"></a><div class="blue">五、坡道定点停车和起步</div>
+ 				<div class="caozuo"> ● 项目说明</div>
+                <div class="text indent">
+                    <p>坡道坡度必须大于等于10度，考C1驾照的陡坡长度要大于等于20米。在考试过程中，学员在陡坡停车后，必须在30秒内起步，否则就算失败。</p>
+                </div>
+                 <div class="caozuo"> ● 评判标准</div>
+                 <div class="text">
+                    <p>1、车辆停止后，车身距离路边缘线30cm以上的，扣10分；</p>
+                    <p>2、车辆停止后，汽车前保险杠未定于桩杆线上，且前后超出50cm的，不合格；</p>
+                    <p>3、车辆停止后，汽车前保险杠未定于桩杆线上，且前后未超出50cm的，扣10分；</p>
+                    <p>4、车辆停止后，后溜超出30厘米，不合格；</p>
+                    <p>5、车辆停止后，后溜小于30厘米，扣10分；</p>
+                    <p>6、车辆起步时间超30秒，不合格。</p>
+                </div>
+                <div class="caozuo"> ● 操作要领</div>
+                 <div class="text">
+                    <p>1、上坡路定点停车：使车辆与右边缘线保持20厘米，直行，当车头与桩杆平齐时停车；</p>
+                    <p>2、起步：打左灯，找准离合结合点稳住，轻压油门后慢放手刹；</p>
+                </div>
+                <div class="caozuo"> ● 注意事项</div>
+                 <div class="text">
+                    <p>1、起步打左灯；</p>
+                    <p>2、离合器半联动，车身抖动，车头上扬；</p>
+                    <p>3、起步别往松手刹；</p>
+                    <p>4、起步持续加油防溜车。</p>
+                </div>
+                <div class="caozuo"> ● 操作步骤</div>
+                 <div class="text">
+                    <p>1、轻点油门，慢松离合器；</p>
+                </div>
+				<div class="image"> <img src="./image/image20.png" style="width: 250px;vertical-align: middle;"> </div>
+				<div class="text">
+                    <p>2、车身抖动，松手刹同时略加油；</p>
+                </div>
+				<div class="image"> <img src="./image/image21.png" style="width: 250px;vertical-align: middle;"> </div>
+				<div class="text">
+                    <p>3、一经起步慢松离合。</p>
+                </div>
+				<div class="image"> <img src="./image/image22.png" style="width: 250px;vertical-align: middle;"> </div>
+            </li>
+            <!-- <li>
+                <div class="blue">其他内容</div>
+ 				<div class="caozuo">行车前的准备</div>
+ 				<div class="green">上车准备一</div>
+                <div class="text">
+                    <p>1、环视车辆、确保安全。</p>
+                    <p>2、调整驾驶座。身体坐正，双手向前伸直，以手腕刚好能放在方向盘上为准。左脚搁在离合器上，右脚搁在刹车上，小腿和大腿成90度。左脚可以轻松把离合器踩到底。身体离方向盘20—25厘米。</p>
+                    <p>3、系好安全带。</p>
+                </div>
+                <div class="green">上车准备二</div>
+                <div class="text">
+                    <p>1、调整驾驶座。坐到驾驶座上之后，首先将右手臂的上半段紧贴着坐椅靠背的边沿，并与之平行，伸出双臂确认相对位置，以食指能够轻松置于方向盘的六点钟位置为准。接着轻轻靠坐在椅背上。再次伸出双臂确认相对位置，以食指指尖能够碰触到方向盘12点钟方向为准。</p>
+                    <p>2、调整头枕、靠背及视线角度。调整头枕以能够托住颈部为宜，调整靠背时保持恰当的倾斜度，调整驾驶座以目光平视时视线能够落在前挡风玻璃的中线上为最佳。</p>
+                    <p>3、调整与方向盘之间的位置关系。手握方向盘的高度低于肩部10厘米左右，同时方向盘下沿与司机身体之间应保持10到12厘米的距离。</p>
+                    <p>4、系上安全带。系安全带时，要注意将安全带置于肩、颈部中央，以正好压住自己的右锁骨为最适宜。</p>
+                </div>
+                <div class="green">上车准备三</div>
+                <div class="text">
+                    <p>1、围绕车子转一圈，检查四轮气压是否正常、螺丝是否松动等;</p>
+                    <p>2、检查车头下面是否有漏水、漏油、漏电现象;</p>
+                    <p>3、调整座椅;</p>
+                    <p>4、调整后视镜、左反光镜、右反光镜;</p>
+                    <p>5、系好安全带;</p>
+                    <p>6、检查档位是否空挡，手刹拉起。</p>
+                </div>
+                 <div class="caozuo">上下车动作</div>
+                  <div class="green">一、上车前的安全检视</div>
+                 <div class="text">
+                    <p>安全检视的方法是按逆时针围绕车一周检视，安全检视的内容包括两个部分：</p>
+                    <p>1、观察车辆周围有无行人和障碍物；</p>
+                    <p>2、检查车辆轮胎技术状况，车身表面有无异常、车身下的路面有无滴痕等。</p>
+                </div> 
+                <div class="green">二、上车</div>
+                 <div class="text">
+                    <p>上车包括开车前的观察和上车的动作</p>
+                    <p>1、开门前的观察。上车打开车门前应向右转身或向右侧转头环视车后方交通的情况，在确定安全的情况下打开车门上车。</p>
+                    <p>2、上车动作。面对车门站好，左手打开车门，随身移至车门内侧，左脚向左前方迈一步，右手握住方向盘左侧，迈右腿，侧身进入驾驶室，右腿轻放在油门踏板上，身体顺势坐下，收左腿。左腿放在离合器踏板左下方，关好门。</p>
+                </div> 
+                <div class="green">三、下车动作</div>
+                 <div class="text">
+                    <p>下车包括开门前的观察和下车动作：</p>
+                    <p>1、开门前的观察。下车时先通过左后视镜，再向左转头观察左后方交通的情况，确定安全后打开车门下车。</p>
+                    <p>2、下车动作。下车时左手打开车门，然后按上车相反的动作下车。</p>
+                </div>
+                <div class="green">四、容易出现的错误和注意事项 </div>
+                 <div class="text">
+                    <p>1、上车前不绕车安全检视</p>
+                    <p>2、开、关车门前不转头向后观察</p>
+                </div>
+                <div class="caozuo">发动机的启动、仪表检查</div>
+                 <div class="green">启动前</div>
+                 <div class="text">
+                    <p>进入驾驶室，应先对车辆外部进行检查</p>
+                    <p>拉起手制动器</p>
+                    <p>调节座位位置</p>
+                    <p>调整方向盘位置</p>
+                    <p>调节外部后视镜和内部后视镜</p>
+                    <p>锁定全部车门</p>
+                    <p>断开不必要的车灯和附件</p>
+                    <p>断开空调和暖风系统</p>
+                    <p>变速器换档杆移入“空档位置”</p>
+                    <p>系好安全带</p>
+                </div>
+                <div class="green">启动发动机</div>
+                 <div class="text indent">
+                    <p>把车钥匙拧向“ON”位置时，不要忘了检查警告灯的性能和燃油表。注意燃油箱内应装有足够的燃油。</p>
+                    <p>充分踩下离合器踏板和油门踏板，然后把钥匙拧到“START”位置，起动发动机。</p>
+                    <p>注：发动机在起动时如第一次不能起动，等待约30秒后再重新起动。</p>
+                    <p>每次不能使起动机啮合15秒以上。</p>
+                    <p>发动机起动成功以后，使变速器留于空档，放开离合器踏板。检查机油油压报警灯。如报警灯点亮，以免发动机损伤。</p>
+                    <p>注意：发动机起动后，不要再把钥匙拧到“START”位置。否则会伤起动机小齿轮和齿轮圈。</p>
+                    <p>发动机起动后应至少怠速运转3~5分钟。</p>
+                </div>
+                <div class="green">发动机的预热</div>
+                 <div class="text indent">
+                    <p>使用预热器可以在气温较低的时帮助发动机起动。</p>
+                    <p>将车钥匙拧到预热位置约2秒钟，预热指示灯点亮约5秒钟以后自动熄灭。</p>
+                    <p>由于电热器消耗较多的电能，应尽量减少使用预热的次数。以免给电池加上过重的负载。</p>
+                    <p>如果您的车上配置有液体加热的暖风系统，则可以打开暖风开关，用液体加热器给冷却系统加热，实现发动机预热。</p>
+                    <p>预热结束后，立即充分踩下离合器踏板和油门踏板，并将发动机钥匙拧到“START”位置，起动发动机。</p>
+                    <p>发动机起动后，重复前项操作的操作及检查工作。</p>
+                    <p>注意：预热发动机时间不能超速运转，否则会缩短发动机寿命。</p>
+                    <p>在寒冷的环境中起动发动机后，不要立即全力加速发动机或突然变换车速。</p>
+                    <p>发动机预热后，冷却水水温表的指针由原来位置开始摆动。</p>
+                    <p>注意：避免不必要的延长怠速运转。长时间的怠速运转会使发动机的冷却水水温过降低到允许范围以下。</p>
+                    <p>冷却水水温过低时运转发动机会损坏发动机性能，缩短发动机的使用寿命。</p>
+                </div>
+                <div class="green">警告 </div>
+                 <div class="text indent">
+                    <p>发动机运转以后不要离开车辆</p>
+                    <p>除驶入或驶出车库以外，不要在车库或其它的密封场所内运转发动机，以免由于通风不畅造成废气中毒。</p>
+                </div>
+                 <div class="caozuo">发动机的启动、仪表检查</div>
+                <div class="text">
+                    <p class=" indent">把方向盘看作钟表的表面，两只手放在9点3 点的位置（即水平两侧）时手肘弯曲为最佳，因为这时手臂有充分的活动区域来迅速操作方向盘，在操作方向盘的任何时候手臂都不应该有伸直的状态。这样方向盘可左右转动180 度，手又不必离开方向盘。如果方向盘转动超过180 度时，我们可以在转向过程中用交替的手法使方向盘转动更顺畅简捷。</p>
+                    <p>另外还要强调几点。</p>
+                    <p>1、在路面凹凸不平时，交替手打方向盘时，大拇指必须要握在方向盘的外侧，大拇指不应该阻碍方向盘的转动，因为这时受路面影响的前轮使方向盘发生剧烈的旋转，冲击力非常大。试想，如果大拇指放在方向盘的内侧，就会被方向盘承受的回馈力量打伤。但在良好的路况是，大拇指可以放在方向盘的内侧。</p>
+                    <p>2、方向盘不仅可以操控车辆的方向，它还可以识别故障。所以行车时方向盘的抖动和跑偏必须引起注意。</p>
+                    <p>3、由于路面经验不足，一些新手容易握方向盘过紧，进而影响方向盘转动平顺。正确的方法是，调整坐姿，放松心情，握住方向盘的正确位置。
+</p>
+                </div>
+                <div class="caozuo">正确的驾驶姿势、安全带的系法</div>
+                <div class="green">一、正确的驾驶姿势 </div>
+                <div class="text">
+                    <p>1、调整座位</p>
+                    <p class="indent">保持上身正姿，不要过于前靠或后仰，否则不利于长时间驾驶。用一只手握住转向盘，另一只手控制座位调节柄，调整到使脚能将离合器踏板和制动踏板轻松踩到底。用这种方法将座位调整到最适合自己的位置。</p>
+                    <div class="image"> <img src="./image/image24.png" style="width: 250px;vertical-align: middle;"> </div>
+                    <p>2、调整内外后视镜</p>
+                    <p>1）内后视镜的调整</p>
+                    <p class="indent">保持正确姿势，面向正前方，手握后视镜边缘调整，调整到只要转动眼睛就可看到汽车后面的全部情况即可。</p>
+                    <p>2）外后视镜的调整</p>
+                    <p class="indent">外后视镜应调整到能看见车体部约占镜子横向1/4，车外物体占3/4；使地平线处于正中稍偏下的位置，以便能够观察路面上尽可能远的物体。</p>
+                    <div class="image"> <img src="./image/image25.png" style="width: 250px;vertical-align: middle;"> </div>
+                </div>
+                <div class="green">二、安全带的系法和摘法 </div>
+                <div class="text">
+                    <p>1、系法</p>
+                    <p class="indent">把安全带慢慢拉出，不要使其拧劲，将安全带扣到能听到“咔”的一声为止。若系得不正确，一旦发生交通事故就不能充分发挥其作用。</p>
+                    <p>2、摘法</p>
+                    <p class="indent">用左手拿安全带，用右手按下安全带扣将其摘下。左手慢慢将其送回。
+摘安全带时，不要将摘下的安全带马上撒手，以防安全带金属扣弹回，打碎玻璃或伤到人。所以，必须手拿安全带将其慢慢送回。</p>
+                </div>
+                <div class="caozuo">考前准备</div>
+                <div class="green">一、考前准备 </div>
+                <div class="text">
+                    <p>1、垫子：这个用途不用说了吧，建议最好选用大一些的垫子，我的经验，太小的垫子容易滑出去，万一在做入库或者侧方的时候，垫子滑出去，就会麻烦了。</p>
+                    <p>2、凤尾夹：用于夹住安全带。</p>
+                    <p>3、扑克牌或者餐巾纸：万一考试车左侧转向灯损坏或丢失，用于填坑(可不带，据我观察，至少前山考场，绝大多数车都有这个灯的)。</p>
+                    <p>4、记号笔：将自己考试车对应的库(侧方库、倒车库)写在手背上，这样比去看准考证来得快，避免出现入错库的问题。</p>
+                    <p>5、粉笔：在考试车右前门上做记号，以便半坡启动对点。</p>
+                </div>
+                <div class="green">二、待考区 </div>
+                <div class="text">
+                    <p>1、早去厕所：进入候考大厅等待时，在身份证交上去之后，尽量立刻去厕所，一个是别在候考大厅傻乎乎的看事故视频，免得更紧张。另外一个，厕所外面的彩钢板围墙上有不少的洞眼，可以看到半坡的一些情况，如考试车道情况、监控杆、感应钉。最后，早去厕所可以避免到通知考试的时候人不在，急匆匆赶回来，加剧心理紧张。</p>
+                    <p>2、分散注意力：不可避免的，还是需要在候考大厅等候，这时候，可以尽量找人聊天说话，或者干脆闭目养神。因为这时候手机都关机了，也不能玩。正前方的电视都是事故视频，看着难受，所以别傻乎乎的盯着电视，也别一直跑到窗户边去看人家半坡，这些都是会加重紧张感的。</p>
+                    <p>3、准备入场：一般驾校都是让学员排队等在入口处，这时候最好别排第一位，因为第一位会看到很多人垂头丧气的过来，也会听到考场里教练斥责没过的学员，会加重紧张感。个人建议排在5、6位，这样即听得到教练叫名字，也不至于还没进场就直接看到失败的场景。</p>
+                    <p>4、领号入场：教练叫名字了，把准考证拿过去，教练会在准考证上写上几道几号车，有的教练还会写上几号库。这时候先别忙进去，仔细看看库和车是不是一致，因为教练写错库的情况也是有的，核对一下花不了几秒钟的。</p>
+                </div>
+                <div class="green">三、考试准备</div>
+                <div class="text">
+                    <p>1、情况观察：进入考场了，可以先远眺几秒钟，大致看看半坡，别的在这个角度看不大到的，然后就可以去自己考试道的起点处准备接车了。这里注意下，不一定先进去的先拿到车，有可能后进来的还先拿到车，大家心态放平，我今天进去后，就等了好一会，比我迟进去的两个人都上车了，我的车都还没到，我正好四处张望下。对了，这时候可以顺便用记号笔把要进的库号写在手背上了。</p>
+                    <p>2、接车：车到了，远远的先可以看看外观，一般来说就看看左车灯，我还特意看了看轮胎，传说中有的车轮胎气不够饱，平路都要加油门，这个我今天没看到。过去了别急上车，先问问刚下车的学员车况，主要问问离合怎么样，别的也来不及问，一般人都会说的，碰上个别没过而情绪不好的学员，那就算了，别往心里去，反正上车了也知道。</p>
+                    <p>3、上车准备：没上车时，先塞扑克或餐巾纸(左车 灯损坏的情况下)。上车后先不忙系安全带，先坐下，试试点，把座位、后视镜都调整到平常在驾校学车的习惯位置，然后用粉笔在右车门半坡定点停车的习惯位置上画个圈圈，具体哪里就不用多说了吧，驾校肯定都教过。这时候再系上安全带，扯的长一点，用凤尾夹夹住，然后脑袋伸出左边试试看，不够就再扯点，一定要让自己脑袋可以自如的伸出窗外。</p>
+                    <p>4、准备起步：先不放手刹，档位也放在空挡上，点一点油门，看看油门的软硬。然后放下手刹，挂一档，慢慢抬离合，找一找半联动的点同时也试一下离合的软硬。最后呢，车子慢慢动了，把方向盘回直，放开双手，看看车子是不是走直线，若有跑偏，记住跑偏的方向，到时候纠正方向盘用得着的。</p>
+                </div>
+            </li>
+            <div class="caozuo">合格标准</div>
+                <div class="green">一、考试目的 </div>
+                <div class="text">
+                    <p>在规定场地内驾驶机动车完成考试项目的情况；</p>
+                    <p>对机动车驾驶技能掌握的情况；</p>
+                    <p>对机动车空间位置判断的能力。</p>
+                </div>
+                <div class="green">二、考试项目 </div>
+                <div class="text indent">
+                    <p>倒车入库、坡道起步和定点停车、侧方停车、曲线行驶、直角转弯五项必考。考试细则调整更加严格一些倒桩考试：倒库过程中不能停车 一次倒入 右侧起点倒入车库 然后开到左边倒入车库 开到起点 取消移库侧方停车：操作需一次倒入 中间不可停车直角转弯：不能压线 需一次完成不能停车定点停车坡道起步：停车原规定30公分 现10公分左右 坡道起步按原有正常操作。</p>
+                    <p>大型客车、牵引车、城市公交车、中型客车、大型货车准驾车型考试项目不得少于6项。大型客车、城市公交车必考项目：桩考、坡道定点停车和起步、直角转弯、通过单边桥、通过连续障碍;牵引车准驾车型必考项目：桩考、坡道定点停车和起步、曲线行驶、直角转弯、限速通过限宽门;中型客车、大型货车准驾车型必考项目：桩考、坡道定点停车和起步、侧方停车、通过单边桥、通过连续障碍。其他考试项目随机选取。</p>
+                    <p>小型汽车、小型自动挡汽车、低速载货汽车、普通三轮摩托车、普通二轮摩托车准驾车型考试项目不得少于4项。小型汽车、低速载货汽车必考项目：桩考、坡道定点停车和起步、侧方停车;小型自动挡汽车必考项目：桩考、侧方停车;普通三轮摩托车、普通二轮摩托车准驾车型必考项目：桩考、坡道定点停车和起步、通过单边 桥。其他考试项目随机选取。</p>
+                    <p>应当先进行桩考。桩考未出现扣分情形的，补考或者重新预约考试时可以不再进行桩考。</p>
+                    <p>其他准驾车型的考试项目，由省级公安机关交通管理部门确定。</p>
+                </div>
+                <div class="green">三、合格标准</div>
+                <div class="text">
+                    <p class="indent">满分为100分，设定不合格、减20分、减10分、减5分的项目评判标准。符合下列规定的，考试合格：</p>
+                    <p>1、报考大型客车、牵引车、城市公交车、中型客车、大型货车准驾车型，成绩达到90分的;</p>
+                    <p>2、报考其他准驾车型成绩达到80分的。</p>
+                </div>
+                <div class="caozuo">考试经验</div>
+                <div class="green">驾考科目二考试不过，原因有以下几点： </div>
+                <div class="text">
+                    <p>1、心理紧张，其实完全没必要紧张，考驾照而已，就算挂了，也没什么，最多交补考费，再考就是了，所以要放松心理，这样才能正常发挥，就当换个场地练车就是了。</p>
+                    <p>2、场地不熟，因为练车场与考场肯定有一定差别的，所以平时练车时就要多向教练请教，了解考场与练车场地有什么区别。</p>
+                    <p>3、粗心大意，很多人总是想快，做起来很急，总是忘记打灯，忘记安全带等。</p>
+                    <p>4、车速过快，因为我们都是新手，车速一快我们就反应不过来了。</p>
+                </div>
+                <div class="green">科目二考试经验分享： </div>
+                <div class="text">
+                    <p>1、进入考场前，先看一下挂在场外的考场平面图，了解一下考试路线；</p>
+                    <p>2、考试第一个项目是倒车入库，进入考场后，上车前，先看一下前方的车库，不要上车了再去找车库在哪里，很多人表示挂在考试的时候找不到车库，找不到参考线；</p>
+                    <p>3、上车后，不用急，先调整好后视镜，因为我们都是新手，平时练车时也是通过后视镜去找参考点的，调整后视镜到平时练车时的状态，然后调整好坐位，再挂好安全带，检查离合、刹车、档位是否正常，如有异常通知工作人员处理，很多人表示车上的语音提示一直在催“考试开始”，工作人员也催“开始考试”，其实不必理会，先做好自己的准;</p>
+                    <p>4、考试过程车速一定要慢，速度慢了，我们就有足够的时间进行修正了；</p>
+                    <p>5、考完倒车入库后，下一个项目就是侧方停车，很多人表示找不到车库；考完倒车入库后，慢慢开到侧方停车的场地，也一定要观察清楚车库在哪里，不要把车开过去了再找车库，这样就肯定完蛋了，是没有回头路的。侧方停车出来时候一定要记得打左转向灯；</p>
+                    <p>6、其实两个考试项目之间是有一段画白线的区域可以停车的，如果前面有人在考试，或者你还没有看清楚目标车库，可以先停车观察清楚；</p>
+                    <p>7、S路线行驶和直角转弯是最简单的，这个也不过就实在没办法了;</p>
+                    <p>8、坡道定点停车与起步注意事项，如果前方有人在考试，一定要先停车在白线区域，等别人考完你再开始，不然一开过去，前面有人挡着，你肯定就挂了；</p>
+                    <p>另外很多练车场，两边是竖了两个竿作为停车参考的。但考场是没有竿子的，我们平时练车也要习惯用地面的黄线做参考；坡道起步一定要记得打左转向灯哦。</p>
+                </div>
+                <div class="green">注意事项</div>
+                <div class="text">
+                    <p>最后总结一下：心平，细心，车慢，肯定过关；</p>
+                </div>
+                <div class="caozuo">单边桥考试技巧</div>
+                <div class="green">一、什么是通过单边桥 </div>
+                <div class="text indent">
+                    <p>通过单边桥是驾驶员考试的一个考核点，要求学员准确运用转向，正确判断车轮直线行驶轨迹，将道路两侧的各一座窄桥先后压在左、右轮下，并平稳顺畅地通过。</p>
+                </div>
+                <div class="green">二、场地设置 </div>
+                <div class="text">
+                    <p>场地设置 桥宽：0.2m；</p>
+                    <p>桥高：≤车辆最小离地间隙，小型车辆桥高为0.08m；</p>
+                    <p>甲乙桥错位：车辆轮距+1m；</p>
+                    <p>甲乙全桥间距：小型车辆3倍轴距；</p>
+                    <p>桥面长度：1.5倍车辆轴距；</p>
+                    <p>坡道：≤7%</p>
+                </div>
+                <div class="green">三、操作要求</div>
+                <div class="text indent">
+                    <p>驾驶员要正确掌握方向，将道路两侧的各一座窄桥先后压在左、右轮下，并平稳顺畅地通过。</p>
+                </div>
+                <div class="green">四、操作方法 </div>
+                <div class="text">
+                    <p>（1）打右灯进科目。车前盖线与左桥中心线处同一直线上，轻抬离合，驾车上左桥；</p>
+                    <p>（2）当车左前轮下桥前行1米左右，轻压离合，轻踩刹车，压着点速度，同时用左手向右推轮半圈（即左手从9点位置到4点位置），观察车头；</p>
+                    <p>（3）当左车盖对住右桥左侧边缘时，向左2圈。同时轻抬离合，给车动力让其上右桥。观察车头。</p>
+                    <p>（4）当车头左棱对准前方黄线（即二线重合）时，向右把轮回正。出科目打左灯。</p>
+                </div>
+                <div class="green">五、评分标准 </div>
+                <div class="text">
+                    <p>1、上桥后掉桥，扣10分；</p>
+                    <p>2、中途停车，不及格；</p>
+                    <p>3、一轮未上桥，扣20分；;</p>
+                    <p>4、熄火，扣20分；</p>
+                    <p>5、不按规定路线行驶，不及格。</p>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+</body>
+</html>
